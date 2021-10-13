@@ -1,0 +1,71 @@
+.DialogBox img {
+  top: 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+}
+.DialogBox {
+  width: 100vw;
+  height: 120%;
+  background-color: rgba(58, 53, 53, 0.8);
+
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  position: relative;
+  border-radius: 6px;
+}
+.contentBox #close {
+  border: 1px solid;
+  border-radius: 4px;
+  position: absolute;
+  padding: 2px 5px;
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+  top: 10px;
+  right: 10px;
+}
+
+.contentBox #close:hover {
+  opacity: 0.6;
+}
+
+.contentBox .btn button {
+  background-color: blue;
+  color: white;
+  margin: 5px;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.contentBox .btn button:hover {
+  opacity: 0.6;
+}
+
+#load {
+  width: 20px;
+  height: 20px;
+
+  margin: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .DialogBox {
+    width: 90%;
+    align-self: center;
+    box-sizing: border-box;
+  }
+}
